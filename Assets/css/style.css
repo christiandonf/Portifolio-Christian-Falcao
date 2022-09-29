@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  background-color:white;
+  padding-top:55px;
+}
+button{
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+header{
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+}
+section, footer{
+  padding: 20px;
+}
+p{
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  color: black !important;
+}
+img{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+.headerLinks{
+display: flex;
+align-items: center;
+}
+.headerLinks a{
+color: white;
+text-decoration: none;
+margin: 0 0 0 20px;
+}
+.content{
+  display: flex;
+  align-items: center;
+}
+.fotoPerfil{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  max-width: 100%;
+}
+.corPrimaria{
+  background-color: lightgreen;
+}
+.corSecundaria{
+  background-color: lightblue;
+}
+.titulosBrancos{
+  text-decoration: underline;
+  text-underline-position: below;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+.titulosVerdes{
+  text-decoration: underline;
+  text-underline-position: below;
+  text-transform: uppercase;
+  color: lightgreen;
+  padding-bottom: 20px;
+  font-weight: 700;
+}
+.textosBrancos{
+  color:white !important;
+}
+.icones{
+  padding-left: 5px;
+}
+.titulosCentro{
+  text-align: center;
+}
