@@ -1,184 +1,190 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="device-width, initial-scale=1.0, maximum-scale=1.0" />
-		<meta name="description" content="Meu primeiro portifolio" />
-		<meta http-equiv="X-UA-compatible" content="ie=edge" />
-		<title>Christian do Nascimento Falcao</title>
-		<script src="https://kit.fontawesome.com/6ffe26f1f6.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="Assets/css/style.css" />
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-compatible" content="ie=edge" />
+    <meta name="description" content="Meu primeiro portifolio" />
+    <meta name="copyright" content="© 2019 Christian do Nascimento Falcao" />
+    <meta name="author" content="Christian do Nascimento Falcao" />
+    <title>Christian do Nascimento Falcao</title>
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/6ffe26f1f6.js" crossorigin="anonymous" defer></script>
+    <script src="./Assets/js/Animation.js" defer></script>
+  </head>
 
-	<body>
-		<header id="header">
-			<div class="header" id="header_css">
-				<nav class="Menu_options">
-					<div class="logo">
-						<i class="fa-solid fa-code"></i>
-						<h2 class="stext">Christian</h2>
-					</div>
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about_me">About Me</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#contact" class="button bcontact">Contact Me</a></li>
-					</ul>
-				</nav>
-				<button class="button" id="menu_bar_button" onclick="toggleDiv()"><i class="fa-solid fa-bars"></i></button>
-			</div>
-			<nav class="menu_bar_nav" id="menu_bar_nav">
-				<ul class="Menu_bar">
-					<li><a onclick="toggleDiv()" class="button" href="#home">Home</a></li>
-					<li><a onclick="toggleDiv()" class="button" href="#about_me">About Me</a></li>
-					<li><a onclick="toggleDiv()" class="button" href="#skills">Skills</a></li>
-					<li><a onclick="toggleDiv()" class="button" href="#projects">Projects</a></li>
-					<li><a onclick="toggleDiv()" class="button" href="#contact">Contact Me</a></li>
-				</ul>
-			</nav>
-		</header>
+  <body>
+    <header id="header">
+      <div class="header" id="header_css">
+        <nav class="Menu_options">
+          <div class="logo">
+            <i class="fa-solid fa-code"></i>
+            <h2 class="stext">Christian</h2>
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about_me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="button bcontact">Contato</a></li>
+          </ul>
+        </nav>
+        <button class="button" id="menu_bar_button" onclick="toggleDiv()"><i class="fa-solid fa-bars"></i></button>
+      </div>
+      <nav class="menu_bar_nav" id="menu_bar_nav">
+        <ul class="Menu_bar">
+          <li><a onclick="toggleDiv()" class="button" href="#home">Home</a></li>
+          <li><a onclick="toggleDiv()" class="button" href="#about_me">Sobre Mim</a></li>
+          <li><a onclick="toggleDiv()" class="button" href="#skills">Habilidades</a></li>
+          <li><a onclick="toggleDiv()" class="button" href="#projects">Projetos</a></li>
+          <li><a onclick="toggleDiv()" class="button" href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-		<main>
-			<section class="section_1" id="home">
-				<div class="conteudo_1">
-					<div class="text_home">
-						<div>
-							<p>Oi, eu sou</p>
-							<h1>Christian do Nascimento Falcao</h1>
-							<p>Web Developer.</p>
-						</div>
-						<div class="social_icons">
-							<a href="https://github.com/christiandonf">
-								<i class="fab fa-github icons" title="GitHub"></i>
-							</a>
-							<a href="https://www.linkedin.com/in/christiandonascimentofalcao">
-								<i class="fab fa-linkedin icons" title="LinkedIn"></i>
-							</a>
-						</div>
-					</div>
-					<img src="./Assets/img/Perfil.jpg" alt="" class="img_inicio img" />
-				</div>
-			</section>
+    <main>
+      <section class="section_1" id="home">
+        <div class="conteudo_1">
+          <div class="text_home">
+            <div>
+              <p>Oi, eu sou</p>
+              <h1>Christian do Nascimento Falcao</h1>
+              <p>Full Stack Web Developer.</p>
+            </div>
+            <div class="social_icons">
+              <a href="https://github.com/christiandonf">
+                <i class="fab fa-github icons" title="GitHub"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/christiandonascimentofalcao">
+                <i class="fab fa-linkedin icons" title="LinkedIn"></i>
+              </a>
+            </div>
+          </div>
+          <img src="./Assets/img/Perfil.jpg" alt="" class="img_inicio img" />
+        </div>
+      </section>
 
-			<section class="section_2" id="about_me">
-				<div class="conteudo_2">
-					<h2>Sobre mim</h2>
-					<p>
-						Meu nome e Christian do nascimento falcão iniciante em desenvolvimento web e apaixonado por 2015 quando iniciei os estudos pela minha faculdade de automacao industrial, embora a area de
-						atução do curso seja mais relacionado a manutenção, eu me vi me identificando cada vez mais pela programação.
-					</p>
-					<p>Desde então venho praticando e me desafiando criando varios projetos diversificados para testar meus conhecimentos, como games e algumas aplicações Web.</p>
-				</div>
-			</section>
+      <section class="section_2" id="about_me">
+        <div class="conteudo_2">
+          <h2>Sobre mim</h2>
+          <p>
+            Meu nome é Christian do Nascimento Falcão Atuo em desenvolvimento web como Freelancer, iniciei meus estudo
+            em 2015 e desde então venho apaixonando por este trabalho.
+          </p>
+          <p>
+            Desde então venho praticando e me desafiando criando varios projetos diversificados para testar meus
+            conhecimentos: Blogs, Sites Institucionais, e-commerce, etc....
+          </p>
+          <p>Gosto de um bom desafio, Games e Comida Salgadas!</p>
+        </div>
+      </section>
 
-			<section class="section_3" id="skills">
-				<h2>Habilidades</h2>
-				<div class="conteudo_3">
-					<div class="skill_icon">
-						<i class="fa-brands fa-html5" title="html5"></i>
-						<p>html5</p>
-					</div>
-					<div class="skill_icon">
-						<i class="fa-brands fa-css3-alt" title="css3"></i>
-						<p>css3</p>
-					</div>
-					<div class="skill_icon">
-						<i class="fa-brands fa-js" title="javaScript"></i>
-						<p>javaScript</p>
-					</div>
-					<div class="skill_icon">
-						<i class="fa-brands fa-sass" title="sass"></i>
-						<p>sass</p>
-					</div>
-					<div class="skill_icon">
-						<i class="fa-brands fa-bootstrap" title="bootstrap"></i>
-						<p>bootstrap</p>
-					</div>
-					<div class="skill_icon">
-						<i class="fa-brands fa-wordpress" title="wordpress"></i>
-						<p>wordpress</p>
-					</div>
-				</div>
-			</section>
+      <section class="section_3" id="skills">
+        <h2>Habilidades</h2>
+        <div class="conteudo_3">
+          <div class="skill_icon">
+            <i class="fa-brands fa-html5" title="html5"></i>
+            <p>HTML5</p>
+          </div>
+          <div class="skill_icon">
+            <i class="fa-brands fa-css3-alt" title="css3"></i>
+            <p>CSS3</p>
+          </div>
+          <div class="skill_icon">
+            <i class="fa-brands fa-js" title="javaScript"></i>
+            <p>JAVASCRIPT</p>
+          </div>
+          <div class="skill_icon">
+            <i class="fa-brands fa-php" title="php"></i>
+            <p>PHP</p>
+          </div>
+          <div class="skill_icon">
+            <i class="fa-brands fa-laravel" title="laravel"></i>
+            <p>LARAVEL</p>
+          </div>
+          <div class="skill_icon">
+            <i class="fa-brands fa-wordpress" title="wordpress"></i>
+            <p>WORDPRESS</p>
+          </div>
+        </div>
+      </section>
 
-			<section class="section_4" id="projects">
-				<h1 class="titulosBrancos titulosCentro">Projetos</h1>
+      <section class="section_4" id="projects">
+        <h1 class="titulosBrancos titulosCentro">Projetos</h1>
 
-				<div class="conteudo_4">
-					<div class="slot">
-						<img src="./Assets/img/embreve.png" alt="" class="img1" />
-						<h2>projeto</h2>
-						<h3>DashBoard</h3>
-						<p>sobre</p>
-						<div class="tech">
-							<h3>Technologies:</h3>
-							<span>HTML</span>
-							<span>CSS</span>
-							<span>JavaScript</span>
-						</div>
-						<div class="slotbuttons">
-							<a href="" target="_blank" class="button">Demo</a>
-							<a href="" target="_blank" class="button">Source</a>
-						</div>
-					</div>
+        <div class="conteudo_4">
+          <div class="slot">
+            <img src="./Assets/img/embreve.png" alt="" class="img1" />
+            <h2>projeto</h2>
+            <h3>DashBoard</h3>
+            <p>sobre</p>
+            <div class="tech">
+              <h3>Technologies:</h3>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="slotbuttons">
+              <a href="" target="_blank" class="button">Demo</a>
+              <a href="" target="_blank" class="button">Source</a>
+            </div>
+          </div>
 
-					<div class="slot">
-						<img src="./Assets/img/embreve.png" alt="" class="img1" />
-						<h2>projeto</h2>
-						<h3>DashBoard</h3>
-						<p>sobre</p>
-						<div class="tech">
-							<h3>Technologies:</h3>
-							<span>HTML</span>
-							<span>CSS</span>
-							<span>JavaScript</span>
-						</div>
-						<div class="slotbuttons">
-							<a href="" target="_blank" class="button">Demo</a>
-							<a href="" target="_blank" class="button">Source</a>
-						</div>
-					</div>
+          <div class="slot">
+            <img src="./Assets/img/embreve.png" alt="" class="img1" />
+            <h2>projeto</h2>
+            <h3>DashBoard</h3>
+            <p>sobre</p>
+            <div class="tech">
+              <h3>Technologies:</h3>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="slotbuttons">
+              <a href="" target="_blank" class="button">Demo</a>
+              <a href="" target="_blank" class="button">Source</a>
+            </div>
+          </div>
 
-					<div class="slot">
-						<img src="./Assets/img/embreve.png" alt="" class="img1" />
-						<h2>projeto</h2>
-						<h3>DashBoard</h3>
-						<p>sobre</p>
-						<div class="tech">
-							<h3>Technologies:</h3>
-							<span>HTML</span>
-							<span>CSS</span>
-							<span>JavaScript</span>
-						</div>
-						<div class="slotbuttons">
-							<a href="" target="_blank" class="button">Demo</a>
-							<a href="" target="_blank" class="button">Source</a>
-						</div>
-					</div>
-				</div>
-			</section>
+          <div class="slot">
+            <img src="./Assets/img/embreve.png" alt="" class="img1" />
+            <h2>projeto</h2>
+            <h3>DashBoard</h3>
+            <p>sobre</p>
+            <div class="tech">
+              <h3>Technologies:</h3>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="slotbuttons">
+              <a href="" target="_blank" class="button">Demo</a>
+              <a href="" target="_blank" class="button">Source</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<section class="section_5" id="contact">
-				<div class="conteudo_5">
-					<h1 class="titulosBrancos titulosCentro">Contato</h1>
-					<div class="contatos_icons">
-						<div class="contatos_icons1">
-							<a href="mailto:christian.nascimento.falcao@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-							<p class="textosBrancos">christian.nascimento.falcao@gmail.com</p>
-						</div>
-						<div class="contatos_icons1">
-							<a href="https://api.whatsapp.com/send?phone=5511999935492"><i class="fa-brands fa-whatsapp"></i></a>
-							<p class="textosBrancos">+55-11-999935492</p>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
+      <section class="section_5" id="contact">
+        <div class="conteudo_5">
+          <h1 class="titulosBrancos titulosCentro">Contato</h1>
+          <div class="contatos_icons">
+            <div class="contatos_icons1">
+              <a href="mailto:christian.nascimento.falcao@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+              <p class="textosBrancos">christian.nascimento.falcao@gmail.com</p>
+            </div>
+            <div class="contatos_icons1">
+              <a href="https://api.whatsapp.com/send?phone=5511999935492"><i class="fa-brands fa-whatsapp"></i></a>
+              <p class="textosBrancos">+55-11-999935492</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-		<footer>
-			<p>Copyright 2022 Christian do Nascimento Falcao</p>
-		</footer>
-	</body>
-	<script src="./Assets/js/Animation.js"></script>
+    <footer>
+      <p>Copyright 2022 Christian do Nascimento Falcao</p>
+    </footer>
+  </body>
 </html>
