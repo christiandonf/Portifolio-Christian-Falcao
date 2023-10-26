@@ -9,3 +9,11 @@ function toggleDiv() {
     header.style.borderRadius = "0 0 0 0"
   }
 }
+
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+
+gtag("config", "AW-11390833779");
