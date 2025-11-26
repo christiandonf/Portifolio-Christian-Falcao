@@ -14,18 +14,17 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Install sshpass
-      run: sudo apt-get install -y sshpass
-
-    - name: SSH into server and pull application
       run: |
-        sshpass -p "${{ secrets.SSH_PRIVATE_KEY }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -p 6969 << EOF
-          cd ${{ secrets.WORK_DIR }}
+        env
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -p 6969 ${{ secrets.HOST }} >> ~/.ssh/known_hosts
+        sudo apt-get install sshpass
 
-          # Set GitHub credentials using GITHUB_TOKEN
-          git config --global credential.helper store
-          echo "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" > ~/.git-credentials
-
-          # Pull the latest code from the repository
-          git pull origin ${{ secrets.MAIN_BRANCH }}
-          
-        EOF
+    - name: Deploy to server
+      run: |
+        sshpass -p '${{ secrets.SSH_PRIVATE_KEY }}' ssh -v -o StrictHostKeyChecking=no ${{ secrets.USER }}@${{ secrets.HOST }} <<'ENDSSH'
+        cd ${{ secrets.WORK_DIR }}
+        git pull
+        ENDSSH
