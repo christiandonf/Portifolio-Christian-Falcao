@@ -18,7 +18,7 @@ jobs:
 
     - name: SSH into server and pull application
       run: |
-        sshpass -p 6969 "${{ secrets.SSH_PRIVATE_KEY }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << EOF
+        sshpass -p "${{ secrets.SSH_PRIVATE_KEY }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} -p 6969<< EOF
           cd ${{ secrets.WORK_DIR }}
 
           # Set GitHub credentials using GITHUB_TOKEN
